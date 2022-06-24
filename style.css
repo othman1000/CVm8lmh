@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Vazirmatn', sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:linear-gradient(45deg,rgb(78, 70, 49),rgb(255, 207, 87));
+}
+.card {
+    position: relative;
+    height: 200px;
+    width: 500px;
+    background: #fff;
+    border-radius: 23px;
+    justify-content: center;
+    transition: 0.5s;
+    box-shadow: 0px 35px 50px rgb(0,0,0,0.15);
+}
+.card:hover{
+    height: 500px;
+    box-shadow: 0px 35px 10px rgb(0,0,0,0.30);
+}
+.img{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background: #fff;
+    box-shadow: 0px 35px 70px rgb(0,0,0,0.45);
+    left: 50%;
+    transform: translateX(-50%);
+    top: -100px;
+    border-radius: 25px ;
+    overflow: hidden;
+    transition: 1s;
+}
+.card:hover .img{
+    height: 255px;
+    width: 255px;
+}
+.img img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 25px ;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.img:hover{
+    height: 250px;
+    width: 250px;
+}
+.card .content{
+    position: absolute;
+    
+    height: 100%;
+    width: 100%;
+    justify-content: center; 
+    align-items: flex-end;
+    font-size: 15px;
+    display: flex;
+    overflow: hidden;
+    
+    color: rgb(0,0,0,0.70);
+    
+}
+.card .content .detals{
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(150px);
+
+}
+.card:hover .content .detals{
+    transform: translateY(0);
+}
+.card .content .detals h2{
+    font-weight: 700;
+    font-size: 1.8em;
+    color: #333;
+    line-height: 1.8em;
+   
+
+}
+.actbtn{
+    display: flex;
+    justify-content: right;
+    
+   
+    
+
+}
+.actbtn input{
+    border: none;
+    outline: none;
+    background: linear-gradient(30deg,rgb(113, 90, 30),rgb(255, 207, 87) );
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.5s;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+}
+.actbtn input:hover{
+    padding: 15px;
+    box-shadow: 0 10px 10px rgb(0,0,0,0.45);
+    
+}
+.card2{
+    background: #fff;
+    height: 500px;
+    width: 600px;
+    border-radius: 50px;
+
+}
+.img2{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    left: 40px;
+    top: 30px;
+}
+.img2 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    left: 0;
+    top: 0;
+}
+.actbtn2 input{
+    border: none;
+    outline: none;
+    background: linear-gradient(30deg,rgb(113, 90, 30),rgb(255, 207, 87) );
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.5s;
+    font-weight: 500;
+    color: #fff;
+    cursor: pointer;
+}
+.actbtn2{
+    display: flex;
+    justify-content: right;
+    
+}
