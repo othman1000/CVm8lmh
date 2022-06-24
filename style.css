@@ -136,6 +136,7 @@ body
     border-radius: 15px;
     left: 0;
     top: 0;
+    object-fit: cover;
 }
 .actbtn2 input{
     border: none;
